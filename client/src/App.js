@@ -22,7 +22,7 @@ function App() {
     socket.on("receive_message", (data) => {
       setMessageReceived(data.message);
     });
-  }, [socket]);
+  }, socket);
   return (
     <div className="App">
       <input
